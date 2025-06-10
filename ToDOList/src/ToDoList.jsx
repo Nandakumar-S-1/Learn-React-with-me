@@ -21,6 +21,10 @@ function ToDOList() {
             showMessage("Please enter a task.", "error");
             return;
         }
+        if(tasks.some((t)=>t.toLowerCase()===newTask.toLowerCase())){
+            showMessage(`${newTask} already exist in the list`)
+            return
+        }
         setTasks((t) => [...t, newTask]);
         setNewTask("");
         showMessage("Task added successfully!", "success");

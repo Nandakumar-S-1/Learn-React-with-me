@@ -1,0 +1,161 @@
+/* 
+.card{
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 250px;
+  display: inline-block;
+}
+.card :hover{
+  border: 3px solid hsl(0, 0%, 80%);
+}
+.image{
+  max-width: 60%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+.cardHead{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: #3f3939;
+}
+.cardText{
+  color: hsl(0, 0, 30%);
+} */
+/* ///////////////////////////////////// */
+/* 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.stdCard {
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #9b59b6;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.stdCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #9b59b6;
+} */
+
+
+/* ========================================= */
+/* .welcomeMes{
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: palegreen;
+  color: black;
+
+}
+.logMes{
+    font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: orangered;
+  color: black;
+  
+} */
+
+
+/* ======list */
+
+/* ol{
+  background-color: antiquewhite;
+  max-width: fit-content;
+  padding: 1%;
+}
+.lis{
+  background-color: violet;
+    font-size: 20px;
+    margin: 8px;
+    border: 1px solid red;
+    color: rgb(27, 49, 91);
+} */
+
+/* ======================= */
+/* 
+.car-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.car-heading {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+}
+
+.car-label {
+  display: block;
+  margin-bottom: 15px;
+  color: #444;
+  font-weight: 500;
+}
+
+.car-input {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+
+.car-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+} */
+
+/* ================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  margin: 40px auto;
+}
+
+input, button {
+  padding: 8px;
+  font-size: 16px;
+}
+
+

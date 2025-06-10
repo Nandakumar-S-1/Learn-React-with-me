@@ -1,11 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function ToDOList() {
-    const [tasks, setTasks] = useState([]);
+    const [tasks, setTasks] = useState(()=>{
+        return JSON.parse(localStorage.getItem('tasks'))||[]
+    });
     const [newTask, setNewTask] = useState("");
     const [message, setMessage] = useState({ text: "", type: "" });
     const [darkMode, setDarkMode] = useState(false);
 
+    useEffect(()=>{
+        localStorage.setItem('tasks',JSON.stringify(tasks))
+    },[tasks])
 
     function InputChange(e) {
         setNewTask(e.target.value);

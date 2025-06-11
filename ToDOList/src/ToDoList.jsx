@@ -5,6 +5,7 @@ function ToDOList() {
         return JSON.parse(localStorage.getItem('tasks'))||[]
     });
     const [newTask, setNewTask] = useState("");
+    const [count,setCount]=useState(0)
     const [message, setMessage] = useState({ text: "", type: "" });
     const [darkMode, setDarkMode] = useState(false);
 
@@ -14,6 +15,10 @@ function ToDOList() {
 
     function InputChange(e) {
         setNewTask(e.target.value);
+    }
+    // console.log(tasks.length)
+    function getCount(){
+        setCount(count=>tasks.length)
     }
 
     function showMessage(text, type = "info") {
@@ -63,13 +68,17 @@ function ToDOList() {
         }
     }
 
+
+
     return (
         <div className={`todo-container ${darkMode ? "dark" : ""}`}>
             <h1>📝 My To-Do List</h1>
             <button onClick={()=>setDarkMode(bef=>!bef)} className="dark-toggle">
                 {darkMode ? "☀️" : "🌙"}
             </button>
-
+            
+            <p>Number of tasks are: {tasks.length}</p>
+            
             {message.text && (
                 <div className={`message ${message.type}`}>
                     {message.text}

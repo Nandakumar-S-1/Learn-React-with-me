@@ -1,35 +1,63 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from "react";
+import Child from "./props";
 
-function App() {
-  const [count, setCount] = useState(0)
+// ///////////////1//////////////props are used to send data from parent to child
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+// export default function Parent(){
+//   let name="Nandu"
+//   return <Child name={name}/>
+// }
 
-export default App
+//////////using callback function,we can pass data from child to parent
+
+// export default function Parent(){
+//   const [mes,setMes]=useState('')
+//   const handleMes =(m)=>setMes(m)
+//   return <Child sendMessage={handleMes}/>
+// }
+
+
+////////toggle check box on button click
+
+// export default function Parent(){
+//   const [toggle,setToggle]=useState(false)
+//   return(
+//     <div>
+//       <Child toggleBox={()=>setToggle(!toggle)}/>
+//       <input type="checkbox" checked={toggle}/>
+//     </div>
+//   )
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -14,8 +14,7 @@ function ToDOList() {
     },[tasks])
 
     function InputChange(e) {
-        setNewTask(e.target.value);
-    }
+        setNewTask(e.target.value);    }
     // console.log(tasks.length)
     function getCount(){
         setCount(count=>tasks.length)

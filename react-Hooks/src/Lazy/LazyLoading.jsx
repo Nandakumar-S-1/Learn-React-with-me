@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 
-const Contact =React.lazy(()=>import('./Lazy/Contact'))
-const Login = React.lazy(()=>import('./Lazy/login'))
+const Contact =React.lazy(()=>import('./Contact'))
+const Login = React.lazy(()=>import('./login'))
 
 const LazyLoading = () => {
     const [load,setLoad] =useState('home')

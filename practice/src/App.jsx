@@ -1,9 +1,11 @@
+import React from 'react'
+import Practice from './Practice'
 
-function App() {
-
+const App = () => {
   return (
-    <>
-    </>
+      <>
+      <Practice/>
+      </>
   )
 }
 

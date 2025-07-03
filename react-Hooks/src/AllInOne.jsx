@@ -193,6 +193,34 @@ export function UseRefExample(){
         <input type='text' ref={inputRef}/>
     )
 }
+
+
+//////////////////////////////////////////////
+// import React from 'react'
+// import { useState } from 'react'
+// import { useRef } from 'react'
+
+// const Practice = () => {
+//     const colors=['red','yellow','blue','green']
+//     const colRef=useRef(null)
+//     const [index,setIndex]=useState(0)
+//     const changeColor =()=>{
+//         const nextCol=colors[index]
+//         colRef.current.style.color =nextCol
+//         setIndex((index+1)%colors.length)
+//     }
+//   return (
+//     <div>
+//       <h2 ref={colRef}>Hello World</h2>
+//       <button onClick={changeColor}>Click</button>
+//     </div> 
+//   )
+// }
+
+// export default Practice
+
+
+
 //////////////////////////React.memo////////////////
 
 import ReactMemoChild from './Lazy/reactMemoChild'
@@ -207,6 +235,32 @@ export const ReactMemoParent = () => {
     </div>
   ) 
 }
+
+//////////////////////////////////////
+
+import React from 'react'
+import { useMemo } from 'react'
+import { useState } from 'react'
+
+const Practic = () => {
+    const [count,setCount]=useState(0)
+    const [number,setNumber]=useState(0)
+
+        const square = useMemo(()=>{
+            console.log('calculating square');
+            return number*number
+        },[number])
+  return (
+    <div>
+      <input type="number" value={number} onChange={(e)=>setNumber(e.target.value)}/>
+      <p>{square}</p>
+      <button onClick={()=>setCount(p=>p+1)}>{count}</button>
+    </div>
+  )
+}
+
+export default Practic
+
 
 ///////////////////////////////////////////////////////////////
 

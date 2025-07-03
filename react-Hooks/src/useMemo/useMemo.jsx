@@ -52,3 +52,35 @@ const updatedFunction =function(num){
     for(let i=0;i<1000;i++){}
         return num *2
 }
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////
+
+// import React from 'react'
+// import { useMemo } from 'react'
+// import { useState } from 'react'
+
+// const Practice = () => {
+//   const [num,setNum]=useState(0)
+//   const square =useMemo(()=>{
+//     return num * num 
+//   },[num])
+//   return (
+//     <div>
+//     <p>{square}</p>
+//     <input type="number" value={num} onChange={(e)=>setNum(Number(e.target.value))}/>
+//     </div>
+//   )
+// }
+
+// export default Practice

@@ -2,8 +2,10 @@ import React, { useState } from 'react'
 
 const ThemeChange = () => {
     const [theme,setTheme]=useState('light')
-    const handleTheme = ()=>{
-        setTheme(theme==='dark' ? 'light' : 'dark')
+
+    function handleTheme(){
+        setTheme(theme==='light'?'dark':'light')
+
     }
     const lightTheme = {
         backgroundColor:'white',
@@ -13,11 +15,12 @@ const ThemeChange = () => {
         backgroundColor:'black',
         color:'white'
     }
-    const colorTheme = theme ==='light' ? lightTheme : darkTheme
+    const changeTheme = theme==='light' ? darkTheme : lightTheme
+
   return (
-    <div style={colorTheme}>
-        <h2>hello world</h2>
-        <button onClick={handleTheme}>click</button>
+    <div style={changeTheme}>
+      <h2>Hello World</h2>
+      <button onClick={handleTheme} style={changeTheme}>change</button>
     </div>
   )
 }

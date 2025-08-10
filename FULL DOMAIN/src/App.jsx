@@ -1,13 +1,13 @@
 import React from 'react'
-import UseStateHooks from './useState/UseStateHooks'
-import ThemeChange from './useState/ThemeChange'
+import Parent from './Parent/Parent'
+import Toggle from './useState/Toggle'
 
 const App = () => {
   return (
-    <>
-    <ThemeChange/>
-      {/* <UseStateHooks/> */}
-    </>
+    <div>
+      {/* <Parent/> */}
+      <Toggle/>
+    </div>
   )
 }
 

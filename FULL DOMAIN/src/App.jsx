@@ -1,12 +1,11 @@
 import React from 'react'
-import Parent from './Parent/Parent'
-import Toggle from './useState/Toggle'
+import Page from './ConditionalRendering/Page'
+
 
 const App = () => {
   return (
     <div>
-      {/* <Parent/> */}
-      <Toggle/>
+      <Page/>
     </div>
   )
 }

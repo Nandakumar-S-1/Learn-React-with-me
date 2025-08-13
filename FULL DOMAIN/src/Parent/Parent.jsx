@@ -1,34 +1,46 @@
-// import React, { useState } from 'react'
-// import { Sibling1 } from './Sibling1'
-// import { Sibling2 } from './Sibling2'
+//Communication between two siblings value inputed in the sibling 1 will be shown in siblling 2
 
-// const Parent = () => {
-//     const [value,setValue]=useState('')
-//   return (
-//     <>
-//       <Sibling1 onChange={setValue}/>
-//       <Sibling2 value={value}/>
-//     </>
-//   )
-// }
+import React, { useState } from 'react'
+import { Sibling1 } from './Sibling1'
+import { Sibling2 } from './Sibling2'
 
-// export default Parent
-
-// Parent
 const Parent = () => {
-  const [value, setValue] = useState('');
+    const [value,setValue]=useState('')
   return (
     <>
-      <SiblingOne onChange={setValue} />
-      <SiblingTwo value={value} />
+      <Sibling1 onChange={setValue}/>
+      <Sibling2 value={value}/>
     </>
-  );
-};
+  )
+}
 
-// SiblingOne
-const SiblingOne = ({ onChange }) => (
-  <input type="text" onChange={e => onChange(e.target.value)} />
-);
+export default Parent
 
-// SiblingTwo
-const SiblingTwo = ({ value }) => <span>{value}</span>;
+
+
+
+
+
+
+
+
+
+
+// // Parent
+// export const Parent = () => {
+//   const [value, setValue] = useState('');
+//   return (
+//     <>
+//       <SiblingOne onChange={setValue} />
+//       <SiblingTwo value={value} />
+//     </>
+//   );
+// };
+
+// // SiblingOne
+// const SiblingOne = ({ onChange }) => (
+//   <input type="text" onChange={e => onChange(e.target.value)} />
+// );
+
+// // SiblingTwo
+// const SiblingTwo = ({ value }) => <span>{value}</span>;

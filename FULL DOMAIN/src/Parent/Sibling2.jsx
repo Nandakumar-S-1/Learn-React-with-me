@@ -1,3 +1,5 @@
+//value will be visible here in this sbling
+
 export const Sibling2 = ({value})=>{
-    <p>{value}</p>
+    return (<p>{value}</p>)
 }  

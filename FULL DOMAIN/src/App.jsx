@@ -1,11 +1,13 @@
 import React from 'react'
 import Page from './ConditionalRendering/Page'
+import TextInput from './useRef/InputRef'
 
 
 const App = () => {
   return (
     <div>
-      <Page/>
+      {/* <Page/> */}
+      <TextInput/>
     </div>
   )
 }

@@ -1,13 +1,10 @@
 import React from 'react'
-import Page from './ConditionalRendering/Page'
-import TextInput from './useRef/InputRef'
-
+import Lazy from './Lazy'
 
 const App = () => {
   return (
     <div>
-      {/* <Page/> */}
-      <TextInput/>
+      <Lazy/>
     </div>
   )
 }

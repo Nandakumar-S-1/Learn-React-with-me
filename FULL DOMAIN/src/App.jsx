@@ -1,10 +1,10 @@
 import React from 'react'
-import Lazy from './Lazy'
+import UseStrChange from './useEffect/StringChange'
 
 const App = () => {
   return (
     <div>
-      <Lazy/>
+      <UseStrChange/>
     </div>
   )
 }

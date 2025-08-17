@@ -13,7 +13,7 @@ This file contains key concepts and practical tasks for React development, inclu
 ## Practical Exercises
 - **Week 1**: 
 
-    Child to parent pass data
+Child to parent pass data
 Create a components to add two numbers by clicking a button
 How to store user input values to useState
 Check whether text entered in 2 input fields are matching or not
@@ -23,12 +23,9 @@ Add a style to each of the title fields
 Fetch data from API using useEffect
 Create input field, entered text show it in an h1 tag
 Workout: pass data from a child component to parent using props
-Implement a counter using useContext
 Toggle checkbox by button click (parent-child communication)
-Do more practical workouts
 Implementation of toggle button
 List ul li implementation
-Basic component workout
 
 - **Week 2**: 
 Create custom hook - convert string to capital letter

@@ -1,10 +1,12 @@
 import React from 'react'
-import UseStrChange from './useEffect/StringChange'
+import ParentLazy from './Lazy/ParentLazy'
+// imp1ort UseStrChange from './useEffect/StringChange'
 
 const App = () => {
   return (
     <div>
-      <UseStrChange/>
+      {/* <UseStrChange/> */}
+      <ParentLazy/>
     </div>
   )
 }

@@ -1,0 +1,48 @@
+.dropdown-container {
+  max-width: 300px;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #fff;
+  cursor: pointer;
+  transition: border 0.2s;
+}
+
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Nested effect */
+.city-dropdown {
+  margin-left: 20px;  /* indent */
+  padding-left: 10px;
+  border-left: 2px solid #007bff;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  background: #f5f5f5;
+  border-left: 4px solid #007bff;
+  border-radius: 4px;
+  font-size: 14px;
+}

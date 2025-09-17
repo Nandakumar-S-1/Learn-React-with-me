@@ -1,13 +1,12 @@
-import React from "react";
-import RefComp from "./useRef/NewRed"
+import React from 'react'
+import InputsMatch from './useState/InputsMatch'
 
-function App() {
+const App = () => {
   return (
-    <div style={{ padding: "20px" }}>
-      <h2>useRef Example</h2>
-      <RefComp />
+    <div>
+      <InputsMatch/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

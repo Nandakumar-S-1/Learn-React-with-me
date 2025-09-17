@@ -1,9 +1,10 @@
 import './App.css'
+import LazyLoading from './Lazy/LazyLoading'
 
 function App() {
 return(
   <>
-
+<LazyLoading/>
   </>
 )
 }

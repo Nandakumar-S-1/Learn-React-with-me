@@ -1,10 +1,13 @@
-import React from 'react'
+import React from "react";
+import RefComp from "./useRef/NewRed"
 
-const App = () => {
+function App() {
   return (
-    <div>
+    <div style={{ padding: "20px" }}>
+      <h2>useRef Example</h2>
+      <RefComp />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

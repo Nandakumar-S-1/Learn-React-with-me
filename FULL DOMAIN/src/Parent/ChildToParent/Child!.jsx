@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Child1 = ({sendData}) => {
-    console.log('child')
+    // console.log('child')
     const data = "My Name Is Nandakumar"
     return (
     <div>

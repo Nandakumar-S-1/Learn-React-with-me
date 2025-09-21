@@ -1,7 +1,10 @@
 import React from "react";
+import StopWatch from "./useEffect/StopWatch";
 
 const App = () => {
-  return <div></div>;
+  return <div>
+    <StopWatch/>
+  </div>;
 };
 
 export default App;

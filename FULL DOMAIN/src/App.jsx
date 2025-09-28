@@ -1,9 +1,9 @@
 import React from "react";
-import StopWatch from "./useEffect/StopWatch";
+import Example3 from "./ReactMemo";
 
 const App = () => {
   return <div>
-    <StopWatch/>
+    <Example3/>
   </div>;
 };
 

@@ -1,10 +1,10 @@
 import React from "react";
-import Example3 from "./ReactMemo";
+
 
 const App = () => {
   return <div>
-    <Example3/>
-  </div>;
+
+  </div>
 };
 
 export default App;

@@ -1,10 +1,12 @@
-import React from "react";
-
+import React from 'react'
+import ParentForm from './Parent/ChildToParent/ParentForm'
 
 const App = () => {
-  return <div>
+  return (
+    <div>
+      <ParentForm />
+    </div>
+  )
+}
 
-  </div>
-};
-
-export default App;
+export default App

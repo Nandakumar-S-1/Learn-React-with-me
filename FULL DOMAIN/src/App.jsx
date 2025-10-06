@@ -1,12 +1,11 @@
-import React from 'react'
-import ParentForm from './Parent/ChildToParent/ParentForm'
+import React from "react";
+import Forward from "./useRef/ForwardRef/Forward";
+
 
 const App = () => {
-  return (
-    <div>
-      <ParentForm />
-    </div>
-  )
-}
+  return <div>
+    <Forward/>
+  </div>
+};
 
-export default App
+export default App;

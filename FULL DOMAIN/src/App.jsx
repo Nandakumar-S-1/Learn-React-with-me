@@ -1,10 +1,10 @@
 import React from "react";
-import Forward from "./useRef/ForwardRef/Forward";
+import Provider from "./Context/Provider";
 
 
 const App = () => {
   return <div>
-    <Forward/>
+    <Provider/>
   </div>
 };
 

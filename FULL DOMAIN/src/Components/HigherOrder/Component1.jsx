@@ -1,12 +1,25 @@
-import React from 'react'
-import HOC from './HOC'
-const Component1 = ({count,handleClick}) => {
+// import React from 'react';
+// import HOC from './HOC';
 
+// const Component1 = ({ count, handleClick }) => {
+//   return (
+//     <div>
+//       <button onClick={handleClick}>Click {count}</button>
+//     </div>
+//   );
+// };
+
+// export default HOC(Component1);
+
+
+import React from 'react'
+
+const Component1 = (prop) => {
   return (
     <div>
-        <button onClick={handleClick}>click {count}</button>
+      <h2>{prop} hello</h2>
     </div>
   )
 }
 
-export default HOC(Component1)
+export default Component1

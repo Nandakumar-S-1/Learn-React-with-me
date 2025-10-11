@@ -1,10 +1,10 @@
 import React from "react";
-import Provider from "./Context/Provider";
+import Practice from "./Practice";
 
 
 const App = () => {
   return <div>
-    <Provider/>
+    <Practice/>
   </div>
 };
 

@@ -1,6 +1,6 @@
 import React, { lazy, Suspense, useState } from "react";
-const Component1 = lazy(() => import("../Lazy/Component1"));
-const Component2 = lazy(() => import("../Lazy/Component2"));
+const Component1 = lazy(() => import("./Component1"));
+const Component2 = lazy(() => import("./Component2"));
 
 const ParentLazy = () => {
   const [comp, setComp] = useState("component1");

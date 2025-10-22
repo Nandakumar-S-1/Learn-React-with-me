@@ -23,7 +23,7 @@
 ////with button
 
 import React, { useState } from 'react'
-import ChildUseEffect from './ChildUseEffect'
+import ChildUseEffect from './UseEffectChld'
 
 const ParentUseEffect = () => {
 

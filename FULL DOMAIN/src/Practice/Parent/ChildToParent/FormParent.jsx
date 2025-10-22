@@ -1,5 +1,5 @@
 import React from 'react'
-import ChildForm from './ChildForm'
+import ChildForm from './FormChild'
 
 const ParentForm = () => {
     function handle(name){

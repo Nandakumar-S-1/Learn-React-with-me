@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ChildCol from './ChildCol'
+import ChildCol from './ColorChangeChild'
 
 const ParentCol = () => {
     const [color,setColor]=useState(null)

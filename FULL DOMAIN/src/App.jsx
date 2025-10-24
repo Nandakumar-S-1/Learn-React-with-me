@@ -1,12 +1,15 @@
 import React from "react";
 import Practice from "./Practice";
-import ThemeChangeParent from "./Practice/Parent/ChildToParent/ThemeChangeParent";
+import Parent from "./Store/Components/Parent";
+import Child from "./Store/Components/Child";
+import SpecialCounterWithUserName from "./Practice/useEffect/SpecialCounterWithUserName";
 
 
 const App = () => {
   return <div>
-    {/* <Practice/> */}
-    <ThemeChangeParent/>
+    {/* <Parent/>
+    <Child/> */}
+    <SpecialCounterWithUserName/>
   </div>
 };
 

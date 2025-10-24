@@ -26,24 +26,24 @@
 
 
 
-// // // Parent
-// // export const Parent = () => {
-// //   const [value, setValue] = useState('');
-// //   return (
-// //     <>
-// //       <SiblingOne onChange={setValue} />
-// //       <SiblingTwo value={value} />
-// //     </>
-// //   );
-// // };
+// // Parent
+// export const Parent = () => {
+//   const [value, setValue] = useState('');
+//   return (
+//     <>
+//       <SiblingOne onChange={setValue} />
+//       <SiblingTwo value={value} />
+//     </>
+//   );
+// };
 
-// // // SiblingOne
-// // const SiblingOne = ({ onChange }) => (
-// //   <input type="text" onChange={e => onChange(e.target.value)} />
-// // );
+// // SiblingOne
+// const SiblingOne = ({ onChange }) => (
+//   <input type="text" onChange={e => onChange(e.target.value)} />
+// );
 
-// // // SiblingTwo
-// // const SiblingTwo = ({ value }) => <span>{value}</span>;
+// // SiblingTwo
+// const SiblingTwo = ({ value }) => <span>{value}</span>;
 
 
 import React, { useState } from 'react'

@@ -1,15 +1,10 @@
 import React from "react";
-import Practice from "./Practice";
-import Parent from "./Store/Components/Parent";
-import Child from "./Store/Components/Child";
-import SpecialCounterWithUserName from "./Practice/useEffect/SpecialCounterWithUserName";
+import Parent from "./Practice/Parent/ChildToParent/Parent";
 
 
 const App = () => {
-  return <div>
-    {/* <Parent/>
-    <Child/> */}
-    <SpecialCounterWithUserName/>
+  return<div>
+    <Parent/>
   </div>
 };
 

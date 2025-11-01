@@ -25,38 +25,55 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React, { useState } from 'react'
 import Child from './Child'
 
 const Parent = () => {
-  const [data,setData]=useState('')
-  const handleData = (data)=>{
-    setData(data)
+  const [mes,setMes]=useState('')
+  const handleMes = (mes) =>{
+    setMes(mes)
   }
   return (
     <div>
-      <h2>parent comp</h2>
-      <h3>{data}</h3>
-      <Child sendData={handleData}/>
+      <h2>Parent</h2>
+      <h3>{mes}</h3>
+      <Child handle={handleMes}/>
     </div>
   )
 }
 
 export default Parent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState } from 'react'
+// import Child from './Child'
+
+// const Parent = () => {
+//   const [data,setData]=useState('')
+//   const handleData = (data)=>{
+//     setData(data)
+//   }
+//   return (
+//     <div>
+//       <h2>parent comp</h2>
+//       <h3>{data}</h3>
+//       <Child sendData={handleData}/>
+//     </div>
+//   )
+// }
+
+// export default Parent

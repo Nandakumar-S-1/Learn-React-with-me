@@ -1,31 +1,15 @@
-import './App.css'
-import LazyLoading from './Lazy/LazyLoading'
+import "./App.css";
+import UseState from "./useState/useState";
 
 function App() {
-return(
-  <>
-<LazyLoading/>
-  </>
-)
+  return (
+    <>
+      <UseState />
+    </>
+  );
 }
 
-export default App
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export default App;
 
 // import React, { createContext, useContext, useState } from 'react';
 

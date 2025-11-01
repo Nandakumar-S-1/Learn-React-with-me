@@ -3,7 +3,7 @@ import React from 'react'
 const Component2 = () => {
   return (
     <div>
-      <h1 style={{color:'red'}}>Component 2</h1>
+      <h1 style={{color:'blue'}}>Component 2</h1>
     </div>
   )
 }

@@ -1,16 +1,11 @@
 import React from 'react'
-import { useEffect } from 'react'
 
-const UseFetch = () => {
-
-
-  useEffect(()=>{
-    
-  },[])
-
+const Parent = () => {
   return (
-    <div></div>
+    <div>
+      <h2>This is the Parent Component</h2>
+    </div>
   )
 }
 
-export default UseFetch
+export default Parent

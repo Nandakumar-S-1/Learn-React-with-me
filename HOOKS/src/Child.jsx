@@ -3,7 +3,7 @@ import React from 'react'
 const Child = () => {
   return (
     <div>
-        
+      <h2>This is the Child Component</h2>
     </div>
   )
 }

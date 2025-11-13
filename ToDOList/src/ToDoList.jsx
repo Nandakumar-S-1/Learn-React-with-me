@@ -5,7 +5,7 @@ function ToDOList() {
         return JSON.parse(localStorage.getItem('tasks'))||[]
     });
     const [newTask, setNewTask] = useState("");
-    const [count,setCount]=useState(0)
+    // const [count,setCount]=useState(0)
     const [message, setMessage] = useState({ text: "", type: "" });
     const [darkMode, setDarkMode] = useState(false);
 
@@ -14,11 +14,12 @@ function ToDOList() {
     },[tasks])
 
     function InputChange(e) {
-        setNewTask(e.target.value);    }
-    // console.log(tasks.length)
-    function getCount(){
-        setCount(count=>tasks.length)
+        setNewTask(e.target.value);
     }
+    // console.log(tasks.length)
+    // function getCount(){
+    //     setCount(count=>tasks.length)
+    // }
 
     function showMessage(text, type = "info") {
         setMessage({ text, type });
@@ -113,92 +114,3 @@ function ToDOList() {
 }
 
 export default ToDOList;
-
-
-// import React,{useState} from "react";
-// function ToDOList(){
-
-//     const [tasks,setTasks]=useState([])
-//     const [newTask,setNewTask]=useState("")
-//     let [errorMes,setErrorMessage]=useState("")
-    
-
-//     //for input in text box
-//     function InputChange(e){
-//         setNewTask(e.target.value)
-//     }
-//     //to add a new Task
-//     function AddTask(){
-//         if(newTask.trim()===""){
-//             setErrorMessage("Enter a task.");
-//             return
-//         }
-//         setTasks(t=>[...t,newTask])
-//         setNewTask("")
-//         setErrorMessage("")
-//     }
-//     //delete Task
-//     function DeleteTask(index){
-//         const updatedTasks =tasks.filter((_,i)=>i!==index)
-//         setTasks(updatedTasks)
-//     }
-     
-//     function MakeTaskTOTop(index){
-//         if(index>0){
-//             const updatedTasks=[...tasks]
-//             let temp=updatedTasks[index]
-//             updatedTasks[index]=updatedTasks[index-1]
-//             updatedTasks[index-1]=temp
-
-//             setTasks([...updatedTasks])
-//         }
-//     }
-
-//     function MakeTaskToBottom(index){
-//          if(index<tasks.length-1){
-//             const updatedTasks=[...tasks]
-//             let temp=updatedTasks[index]
-//             updatedTasks[index]=updatedTasks[index+1]
-//             updatedTasks[index+1]=temp
-
-//             setTasks([...updatedTasks])
-//         }
-//     }
-
-// return(
-//     <div className="to-do-list">
-//         <h1>To Do List</h1>
-//         <div>
-//             {errorMes && <p style={{color:"red"}}>{errorMes}</p> }
-//             <input type="text"
-//                     placeholder="Enter a new Task..."
-//                     value={newTask}
-//                     onChange={InputChange}/>
-//             <button className="add-button"
-//                     onClick={AddTask}>
-//                 Add
-//             </button>
-//         </div>
-//         <ol>
-//             {tasks.map((task,index)=>
-//                 <li key={index}>
-//                     <span className="text">{task}</span>
-//                     <button className="delete-button" 
-//                             onClick={()=>DeleteTask(index)}>
-//                             Delete</button>
-//                     <button className="move-button" 
-//                             onClick={()=>MakeTaskTOTop(index)}>
-//                             Move Up
-//                     </button>
-//                     <button className="move-button" 
-//                             onClick={()=>MakeTaskToBottom(index)}>
-//                             Move Down
-//                     </button>
-//                 </li>
-//             )}
-//         </ol>
-//     </div>
-// )
-// }
-
-// export default ToDOList

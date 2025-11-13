@@ -1,3 +1,4 @@
+//Use case:--Toggle dark/light mode, show/hide password, dropdowns.
 import React from 'react'
 import { useState } from 'react'
 
@@ -12,3 +13,4 @@ const UseToggle = () => {
 }
 
 export default UseToggle
+
